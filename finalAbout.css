@@ -1,14 +1,21 @@
 @font-face {
   font-family:"destain";
   src:url("destain.otf");
-  font-weight:normal;
+  font-weight:bold;
 }
 
 h1 {
   font-family:"destain";
-  color:whites;
+  color:white;
+  font-size:60px;
+  text-align:center;
+  margin:0px;
+  border:4px white;
+  border-style:dashed solid;
+  width:300px;
+
 }
 
 body {
-  
+  background-image:url("LGBTflag.png");
 }
