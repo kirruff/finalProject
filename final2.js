@@ -24,11 +24,20 @@ var cafe = {name: "Cafe Capistrano", type:"Mexican", address:"8471 Garvey Dr #11
 function foodTypes() {
 
 var american = [bigEds, carolina, deans, cinema, Fork];
-var italian = [caffeLuna, jimmy, mulino, bella, bocci]
-var asian = [panda, mura, sake, sono, sushi, buku]
-var mexican = [margaritas, cerro, taquitos, centro, armadillo, Cafe]
+var italian = [caffeLuna, jimmy, mulino, bella, bocci];
+var asian = [panda, mura, sake, sono, sushi, buku];
+var mexican = [margaritas, cerro, taquitos, centro, armadillo, Cafe];
 
-  if (document.getElementById('american').clicked == true){
-
+if (document.getElementById('american').clicked == true){
+  document.getElementById("american").innerHTML = american.toString();
   }
+else if (document.getElementById('italian').clicked == true){
+  document.getElementById("italian").innerHTML = italian.toString();
+  }
+  else if (document.getElementById('asian').clicked == true){
+    document.getElementById("asian").innerHTML = asian.toString();
+    }
+    else if (document.getElementById('mexican').clicked == true){
+      document.getElementById("mexican").innerHTML = mexican.toString();
+      }
 }
