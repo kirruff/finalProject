@@ -29,15 +29,15 @@ var asian = [panda, mura, sake, sono, sushi, buku];
 var mexican = [margaritas, cerro, taquitos, centro, armadillo, Cafe];
 
 if (document.getElementById('american').clicked == true){
-  document.getElementById("american").innerHTML = american.toString();
+  document.getElementById("list").innerHTML = american.toString();
   }
 else if (document.getElementById('italian').clicked == true){
-  document.getElementById("italian").innerHTML = italian.toString();
+  document.getElementById("list").innerHTML = italian.toString();
   }
   else if (document.getElementById('asian').clicked == true){
-    document.getElementById("asian").innerHTML = asian.toString();
+    document.getElementById("list").innerHTML = asian.toString();
     }
     else if (document.getElementById('mexican').clicked == true){
-      document.getElementById("mexican").innerHTML = mexican.toString();
+      document.getElementById("list").innerHTML = mexican.toString();
       }
 }
