@@ -8,6 +8,7 @@ body {
   font-family: "destain";
   background-image: url("transparentLGBT.png");
   font-size: 100px;
+  text-align: center;
 }
 
 button {
@@ -20,5 +21,8 @@ button {
   border-width: 1.5px;
   font-size: 40px;
   font-family: "destain";
+}
+
+#dine {
 
 }
