@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "destain";
+  src: url("destain.otf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "zokhan";
+  src: url("Zokhan.ttf");
+  font-weight: normal;
+}
+
+body {
+  background-image: url("transparentLGBT.png");
+  text-align: center;
+  font-family: "destain";
+  font-size: 30px;
+}
+
+button {
+  border-radius: 10px;
+  height: 50px;
+  width: 100px;
+  background-color: transparent;
+  border: #000000;
+  border-style: solid;
+  border-width: 1.5px;
+  font-size: 50px;
+  font-family: "zokhan";
+}
