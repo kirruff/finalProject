@@ -32,7 +32,12 @@ if (Boolean(document.getElementById('american').onclick)){
   alert("hello");
   var names="";
   for (var x=0; x<american.length;x++){
-    names+= american[x].name + ", ";
+    if (x<american.length-1){
+    names = names + american[x].name + ", ";
+  }
+  else (x==american.length-1){
+    names = names + american[x].name;
+  }
   }
 else if (Boolean(document.getElementById('italian').onclick)){
   document.getElementById("list").innerHTML = italian.toString();
