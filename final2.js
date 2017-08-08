@@ -14,3 +14,21 @@ var carolina = {name: "Carolina Ale House", type:"American", address:"500 Glenwo
 var deans = {name: "Dean's Kitchen + Bar", type:"American", address:"1080 Darrington Dr, Cary, NC 27513"}
 var cinema = {name: "Raleighwood Cinema Grill", type:"American", address:"6609 Falls of Neuse Rd, Raleigh, NC 27615"}
 var fork = {name: "The Twisted Fork", type:"American", address:"3751 Sumner Blvd #170, Raleigh, NC 27616"}
+var margaritas = {name: "Las Margaritas Mexican Restaurant", type:"Mexican", address:"7431 Six Forks Rd, Raleigh, NC 27615"}
+var cerro = {name: "El Cerro Bar and Grill", type:"Mexican", address:"1331 E Main St, Havelock, NC 28532"}
+var taquitos = {name: "Dos Taquitos", type:"Mexican", address:"6101 Glenwood Ave, Raleigh, NC 27612"}
+var centro = {name: "Centro", type:"Mexican", address:"106 S Wilmington St, Raleigh, NC 27601"}
+var armadillo = {name: "Armadillo Grill", type:"Mexican", address:"439 Glenwood Ave, Raleigh, NC 27603"}
+var cafe = {name: "Cafe Capistrano", type:"Mexican", address:"8471 Garvey Dr #113, Raleigh, NC 27616"}
+
+function foodTypes() {
+
+var american = [bigEds, carolina, deans, cinema, Fork];
+var italian = [caffeLuna, jimmy, mulino, bella, bocci]
+var asian = [panda, mura, sake, sono, sushi, buku]
+var mexican = [margaritas, cerro, taquitos, centro, armadillo, Cafe]
+
+  if (document.getElementById('american').clicked == true){
+
+  }
+}
