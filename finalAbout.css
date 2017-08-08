@@ -1,0 +1,10 @@
+@font-face {
+  font-family:"destain";
+  src:url("destain.otf");
+  font-weight:normal;
+}
+
+title {
+  font-family:"destain";
+  color:blue;
+}
