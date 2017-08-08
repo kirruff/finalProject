@@ -1,4 +1,11 @@
+@font-face {
+  font-family: "destain";
+  src: url("destain.otf");
+  font-weight: normal;
+}
+
 body {
   background-image: url("https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjV1ojw8MfVAhVK2IMKHcIkDCgQjRwIBw&url=https%3A%2F%2Fes.wikipedia.org%2Fwiki%2FCuzco&psig=AFQjCNFLXujCb1Fi4pEjsiIpiRuYPeofxQ&ust=1502290036036152");
   opacity: .5;
+  font-family: "destain";
 }
