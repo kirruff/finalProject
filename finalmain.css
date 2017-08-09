@@ -82,3 +82,8 @@ button:active {
   position:relative;
   left:30px;
 }
+
+#inclusive {
+  font-family: "zokhan";
+  font-size: 55px;
+}
