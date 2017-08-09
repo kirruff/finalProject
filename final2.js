@@ -76,7 +76,7 @@ function mexicanFood(){
   var mexican = [margaritas, cerro, taquitos, centro, armadillo,cafe];
   var names3="";
   for (var x=0; x<mexican.length;x++){
-      names3 = names3 + "<li>" + mexican[x].name + "</li>" + mexican[x].address;
+      names3 = names3 + "<li>" + mexican[x].name + "</li>" + mexican[x].address ;
   }
   document.getElementById("list").innerHTML=names3;
 }

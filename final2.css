@@ -48,3 +48,7 @@ button {
   font-family: "zokhan";
   font-size: 60px;
 }
+
+li {
+  text-align:center;
+}
