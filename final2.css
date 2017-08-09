@@ -15,17 +15,21 @@ h1 {
   font-size: 65px;
   position: relative;
   top: 17px;
+  text-align:center;
 }
 
 body {
   background-image: url("transparentLGBT.png");
-  text-align: center;
+  text-align: left;
   font-family: "zokhan";
   font-size: 70px;
   position: relative;
   bottom: 10px
 }
 
+button {
+  align-items:center;
+}
 .press {
   border-radius: 10px;
   height: 50px;
