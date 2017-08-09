@@ -16,6 +16,7 @@ var carolina = {name: "Carolina Ale House", type:"American", address:"500 Glenwo
 var deans = {name: "Dean's Kitchen + Bar", type:"American", address:"1080 Darrington Dr, Cary, NC 27513"};
 var cinema = {name: "Raleighwood Cinema Grill", type:"American", address:"6609 Falls of Neuse Rd, Raleigh, NC 27615"};
 var fork = {name: "The Twisted Fork", type:"American", address:"3751 Sumner Blvd #170, Raleigh, NC 27616"};
+var zinburger = {name: "Zinburger", type:"American", address:"8030 Renaissance Pkwy #905, Durham, NC 27713"};
 
 var margaritas = {name: "Las Margaritas Mexican Restaurant", type:"Mexican", address:"7431 Six Forks Rd, Raleigh, NC 27615"};
 var cerro = {name: "El Cerro Bar and Grill", type:"Mexican", address:"1331 E Main St, Havelock, NC 28532"};
@@ -43,7 +44,7 @@ var cider = {name: "Bull City Ciderworks", type:"Booze", address:"305 S Roxboro 
 
 function americanFood() {
 
-  var american = [bigEds, carolina, deans, cinema, fork];
+  var american = [bigEds, carolina, deans, cinema, fork, zinburger];
   var names="";
   for (var x=0; x<american.length;x++){
       names = names + "<ul>" + american[x].name + "</ul>" + "<li>" + american[x].address + "</li>";
