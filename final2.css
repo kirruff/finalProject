@@ -10,11 +10,20 @@
   font-weight: normal;
 }
 
+h1 {
+  font-family: "destain";
+  font-size: 65px;
+  position: relative;
+  top: 17px;
+}
+
 body {
   background-image: url("transparentLGBT.png");
   text-align: center;
-  font-family: "destain";
+  font-family: "zokhan";
   font-size: 70px;
+  position: relative;
+  bottom: 10px
 }
 
 .press {
@@ -27,8 +36,4 @@ body {
   border-width: 1.5px;
   font-size: 50px;
   font-family: "zokhan";
-}
-
-#usa {
-
 }
