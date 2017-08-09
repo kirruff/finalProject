@@ -1,4 +1,4 @@
-var caffeLuna = {type:"italian", address:"136 E Hargett St, Raleigh, NC 27601"};
+var caffeLuna = {name: "Caffe Luna", type:"italian", address:"136 E Hargett St, Raleigh, NC 27601"};
 var jimmy= {name: "Jimmy V's Osteria + Bar",type:"italian", address:"420 Fayetteville St, Raleigh, NC 27601"};
 var mulino = {name: "Mulino Italian Kitchen & Bar", type:"italian", address:"136 E Hargett St, Raleigh, NC 27601"};
 var bella = {name: "Bella Monica", type:"italian", address:"3121 Edwards Mill Rd, Raleigh, NC 27612"};
@@ -8,7 +8,7 @@ var mura = {name: "Mura at North Hills", type:"asian", address:"4121 Main St #11
 var sake = {name: "Sake House", type:"asian", address:"1141 Falls River Ave # 128, Raleigh, NC 27614"};
 var sono = {name: "Sono Japanese Restaurant", type:"asian", address:"319 Fayetteville St #101, Raleigh, NC 27601"};
 var sushi = {name: "Sushi Thai Restaurant", type:"asian", address:"2434 Wycliff Rd, Raleigh, NC 27613"};
-var buku = {name: "Bu•ku Global Street Food", type:"asian", address:"10 E Davie St, Raleigh, NC 27601"};
+var buku = {name: "Buku Global Street Food", type:"asian", address:"10 E Davie St, Raleigh, NC 27601"};
 var bigEds = {name: "Big Ed's City Market Restaurant", type:"American", address:"220 Wolfe St, Raleigh, NC 27601"};
 var carolina = {name: "Carolina Ale House", type:"American", address:"500 Glenwood Ave, Raleigh, NC 27603"};
 var deans = {name: "Dean's Kitchen + Bar", type:"American", address:"1080 Darrington Dr, Cary, NC 27513"};
@@ -24,8 +24,8 @@ var cafe = {name: "Cafe Capistrano", type:"Mexican", address:"8471 Garvey Dr #11
 function americanFood() {
 
   var american = [bigEds, carolina, deans, cinema, fork];
-  if (Boolean(document.getElementById('american').onclick)){
-    alert("button that was clicked: " + (boolean(document.getElementById("american").onclick));
+  document.getElementById('american').onclick;
+    alert("hello");
     var names="";
     for (var x=0; x<american.length;x++){
       if (x<american.length-1){
@@ -36,13 +36,13 @@ function americanFood() {
       }
     }
     document.getElementById("list").innerHTML=names;
-  }
+
 }
 
 function italianFood(){
 
   var italian = [caffeLuna, jimmy, mulino, bella, bocci];
-  if (Boolean(document.getElementById('italian').onclick)){
+  document.getElementById('italian').onclick;
     alert("hello");
     var names1="";
     for (var x=0; x<italian.length;x++){
@@ -54,13 +54,13 @@ function italianFood(){
       }
     }
     document.getElementById("list").innerHTML=names1;
-  }
+
 }
 
 function asianFood(){
 
   var asian = [panda, mura, sake, sono, sushi, buku];
-  if (Boolean(document.getElementById('asian').onclick)){
+  document.getElementById('asian').onclick;
     alert("hello");
     var names2="";
     for (var x=0; x<asian.length;x++){
@@ -72,12 +72,12 @@ function asianFood(){
       }
     }
     document.getElementById("list").innerHTML=names2;
-  }
+
 }
 
 function mexicanFood(){
-  
-  if (Boolean(document.getElementById('mexican').onclick)){
+var mexican = [margaritas, cerro, taquitos, centro, armadillo,cafe];
+  document.getElementById('mexican').onclick;
     alert("hello");
     var names3="";
     for (var x=0; x<mexican.length;x++){
@@ -89,5 +89,5 @@ function mexicanFood(){
       }
     }
     document.getElementById("list").innerHTML=names3;
-  }
+
 }
