@@ -21,31 +21,73 @@ var centro = {name: "Centro", type:"Mexican", address:"106 S Wilmington St, Rale
 var armadillo = {name: "Armadillo Grill", type:"Mexican", address:"439 Glenwood Ave, Raleigh, NC 27603"};
 var cafe = {name: "Cafe Capistrano", type:"Mexican", address:"8471 Garvey Dr #113, Raleigh, NC 27616"};
 
-function foodTypes() {
+function americanFood() {
 
-var american = [bigEds, carolina, deans, cinema, fork];
-var italian = [caffeLuna, jimmy, mulino, bella, bocci];
-var asian = [panda, mura, sake, sono, sushi, buku];
-var mexican = [margaritas, cerro, taquitos, centro, armadillo, cafe];
-
-if (Boolean(document.getElementById('american').onclick)){
-  alert("hello");
-  var names="";
-  for (var x=0; x<american.length;x++){
-    if (x<american.length-1){
-    names = names + american[x].name + ", ";
-  }
-  else (x==american.length-1){
-    names = names + american[x].name;
-  }
-  }
-else if (Boolean(document.getElementById('italian').onclick)){
-  document.getElementById("list").innerHTML = italian.toString();
-  }
-  else if (Boolean(document.getElementById('asian').onclick)){
-    document.getElementById("list").innerHTML = asian.toString();
-    }
-    else if (Boolean(document.getElementById('mexican').onclick)){
-      document.getElementById("list").innerHTML = mexican.toString();
+  var american = [bigEds, carolina, deans, cinema, fork];
+  if (Boolean(document.getElementById('american').onclick)){
+    alert("button that was clicked: " + (boolean(document.getElementById("american").onclick));
+    var names="";
+    for (var x=0; x<american.length;x++){
+      if (x<american.length-1){
+        names = names + american[x].name + ", ";
       }
+      else {
+        names = names + american[x].name;
+      }
+    }
+    document.getElementById("list").innerHTML=names;
+  }
+}
+
+function italianFood(){
+
+  var italian = [caffeLuna, jimmy, mulino, bella, bocci];
+  if (Boolean(document.getElementById('italian').onclick)){
+    alert("hello");
+    var names1="";
+    for (var x=0; x<italian.length;x++){
+      if (x<italian.length-1){
+        names1 = names1 + italian[x].name + ", ";
+      }
+      else {
+        names1 = names1 + italian[x].name;
+      }
+    }
+    document.getElementById("list").innerHTML=names1;
+  }
+}
+
+function asianFood(){
+
+  var asian = [panda, mura, sake, sono, sushi, buku];
+  if (Boolean(document.getElementById('asian').onclick)){
+    alert("hello");
+    var names2="";
+    for (var x=0; x<asian.length;x++){
+      if (x<asian.length-1){
+        names2 = names2 + asian[x].name + ", ";
+      }
+      else {
+        names2 = names2 + asian[x].name;
+      }
+    }
+    document.getElementById("list").innerHTML=names2;
+  }
+}
+
+function mexicanFood(){
+  
+  if (Boolean(document.getElementById('mexican').onclick)){
+    alert("hello");
+    var names3="";
+    for (var x=0; x<mexican.length;x++){
+      if (x<mexican.length-1){
+        names3 = names3 + mexican[x].name + ", ";
+      }
+      else {
+        names3 = names3 + mexican[x].name;
+      }
+    }
+    document.getElementById("list").innerHTML=names3;
+  }
 }
