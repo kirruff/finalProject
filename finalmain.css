@@ -26,20 +26,23 @@ button {
 #dine {
   position: relative;
   right: 70px;
-  top: 15px;
-  bottom: 10px;
+  top: 10px;
 }
 
 #out {
   position: relative;
-  left: 55px;
-  bottom: 44px;
+  left: 53px;
+  bottom: 50px;
 }
 
 #about {
   position: relative;
+  right: 76px;
+  top: 10px;
 
 }
 #us {
   position: relative;
+  left: 53px;
+  bottom: 50px;
 }
