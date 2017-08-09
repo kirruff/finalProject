@@ -67,3 +67,13 @@ button {
   left: 53px;
   bottom: 70px;
 }
+
+#dineout {
+  position: relative;
+  right: 35px;
+}
+
+#aboutus {
+  position: relative;
+  left: 35px;
+}
