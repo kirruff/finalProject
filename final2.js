@@ -22,72 +22,60 @@ var armadillo = {name: "Armadillo Grill", type:"Mexican", address:"439 Glenwood 
 var cafe = {name: "Cafe Capistrano", type:"Mexican", address:"8471 Garvey Dr #113, Raleigh, NC 27616"};
 
 function americanFood() {
-
+  
   var american = [bigEds, carolina, deans, cinema, fork];
-  document.getElementById('american').onclick;
-    alert("hello");
-    var names="";
-    for (var x=0; x<american.length;x++){
-      if (x<american.length-1){
-        names = names + american[x].name + ", ";
-      }
-      else {
-        names = names + american[x].name;
-      }
+  var names="";
+  for (var x=0; x<american.length;x++){
+    if (x<american.length-1){
+      names = names + american[x].name + "</br>";
     }
-    document.getElementById("list").innerHTML=names;
-
+    else {
+      names = names + american[x].name;
+    }
+  }
+  document.getElementById("list").innerHTML=names;
 }
 
 function italianFood(){
 
   var italian = [caffeLuna, jimmy, mulino, bella, bocci];
-  document.getElementById('italian').onclick;
-    alert("hello");
-    var names1="";
-    for (var x=0; x<italian.length;x++){
-      if (x<italian.length-1){
-        names1 = names1 + italian[x].name + ", ";
-      }
-      else {
-        names1 = names1 + italian[x].name;
-      }
+  var names1="";
+  for (var x=0; x<italian.length;x++){
+    if (x<italian.length-1){
+      names1 = names1 + italian[x].name + "</br>";
     }
-    document.getElementById("list").innerHTML=names1;
-
+    else {
+      names1 = names1 + italian[x].name;
+    }
+  }
+  document.getElementById("list").innerHTML=names1;
 }
 
 function asianFood(){
 
   var asian = [panda, mura, sake, sono, sushi, buku];
-  document.getElementById('asian').onclick;
-    alert("hello");
-    var names2="";
-    for (var x=0; x<asian.length;x++){
-      if (x<asian.length-1){
-        names2 = names2 + asian[x].name + ", ";
-      }
-      else {
-        names2 = names2 + asian[x].name;
-      }
+  var names2="";
+  for (var x=0; x<asian.length;x++){
+    if (x<asian.length-1){
+      names2 = names2 + asian[x].name + "</br>";
     }
-    document.getElementById("list").innerHTML=names2;
-
+    else {
+      names2 = names2 + asian[x].name;
+    }
+  }
+  document.getElementById("list").innerHTML=names2;
 }
 
 function mexicanFood(){
-var mexican = [margaritas, cerro, taquitos, centro, armadillo,cafe];
-  document.getElementById('mexican').onclick;
-    alert("hello");
-    var names3="";
-    for (var x=0; x<mexican.length;x++){
-      if (x<mexican.length-1){
-        names3 = names3 + mexican[x].name + ", ";
-      }
-      else {
-        names3 = names3 + mexican[x].name;
-      }
+  var mexican = [margaritas, cerro, taquitos, centro, armadillo,cafe];
+  var names3="";
+  for (var x=0; x<mexican.length;x++){
+    if (x<mexican.length-1){
+      names3 = names3 + mexican[x].name + "<br>";
     }
-    document.getElementById("list").innerHTML=names3;
-
+    else {
+      names3 = names3 + mexican[x].name;
+    }
+  }
+  document.getElementById("list").innerHTML=names3;
 }
