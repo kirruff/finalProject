@@ -1,6 +1,12 @@
 @font-face {
   font-family: "destain";
   src: url("destain.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "zokhan";
+  src: url("Zokhan.ttf");
   font-weight: normal;
 }
 
@@ -13,8 +19,19 @@
 body {
   font-family: "destain";
   background-image: url("transparentLGBT.png");
-  font-size: 100px;
   text-align: center;
+}
+
+h1 {
+  font-size: 80px;
+  margin:0px;
+  padding:0px;
+}
+
+h2 {
+  font-size:30px;
+  margin:0px;
+  padding:0px;
 }
 
 button {
@@ -25,7 +42,7 @@ button {
   border: #000000;
   border-style: solid;
   border-width: 1.5px;
-  font-size: 90px;
+  font-size: 70px;
   font-family: "zokhan";
 }
 
@@ -40,7 +57,6 @@ button {
   left: 53px;
   bottom: 70px;
 }
-
 #about {
   position: relative;
   right: 76px;
