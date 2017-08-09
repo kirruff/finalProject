@@ -20,6 +20,10 @@ var taquitos = {name: "Dos Taquitos", type:"Mexican", address:"6101 Glenwood Ave
 var centro = {name: "Centro", type:"Mexican", address:"106 S Wilmington St, Raleigh, NC 27601"};
 var armadillo = {name: "Armadillo Grill", type:"Mexican", address:"439 Glenwood Ave, Raleigh, NC 27603"};
 var cafe = {name: "Cafe Capistrano", type:"Mexican", address:"8471 Garvey Dr #113, Raleigh, NC 27616"};
+var crepes = {name: "Coffee & Crepes", type:"Coffee", address:"315 Crossroads Blvd, Cary, NC 27518"};
+var deja = {name: "DejaBrew", type:"Coffee", address:"5001 Falls of Neuse Rd, Raleigh, NC 27609"};
+var brew = {name: "BREW", type:"Coffee", address:"1st Floor, 122 E Chatham St, Cary, NC 27511"};
+var liquid = {name: "Liquid State", type:"Coffee", address:"1908 Hillsborough St, Raleigh, NC 27607"};
 
 function americanFood() {
 
