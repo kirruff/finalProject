@@ -22,16 +22,11 @@ var armadillo = {name: "Armadillo Grill", type:"Mexican", address:"439 Glenwood 
 var cafe = {name: "Cafe Capistrano", type:"Mexican", address:"8471 Garvey Dr #113, Raleigh, NC 27616"};
 
 function americanFood() {
-  
+
   var american = [bigEds, carolina, deans, cinema, fork];
   var names="";
   for (var x=0; x<american.length;x++){
-    if (x<american.length-1){
-      names = names + american[x].name + "</br>";
-    }
-    else {
-      names = names + american[x].name;
-    }
+      names = names + "<ul>" + american[x].name + "</ul>" + "<li>" + american[x].address + "</li>";
   }
   document.getElementById("list").innerHTML=names;
 }
@@ -40,13 +35,8 @@ function italianFood(){
 
   var italian = [caffeLuna, jimmy, mulino, bella, bocci];
   var names1="";
-  for (var x=0; x<italian.length;x++){
-    if (x<italian.length-1){
-      names1 = names1 + italian[x].name + "</br>";
-    }
-    else {
-      names1 = names1 + italian[x].name;
-    }
+    for (var x=0; x<italian.length;x++){
+        names1 = names1 + "<ul>" + italian[x].name + "</ul>" + "<li>" + italian[x].address + "</li>";
   }
   document.getElementById("list").innerHTML=names1;
 }
@@ -56,12 +46,7 @@ function asianFood(){
   var asian = [panda, mura, sake, sono, sushi, buku];
   var names2="";
   for (var x=0; x<asian.length;x++){
-    if (x<asian.length-1){
-      names2 = names2 + asian[x].name + "</br>";
-    }
-    else {
-      names2 = names2 + asian[x].name;
-    }
+      names2 = names2 + "<ul>" + asian[x].name + "</ul>" + "<li>" + asian[x].address + "</li>";
   }
   document.getElementById("list").innerHTML=names2;
 }
@@ -70,12 +55,7 @@ function mexicanFood(){
   var mexican = [margaritas, cerro, taquitos, centro, armadillo,cafe];
   var names3="";
   for (var x=0; x<mexican.length;x++){
-    if (x<mexican.length-1){
-      names3 = names3 + mexican[x].name + "<br>";
-    }
-    else {
-      names3 = names3 + mexican[x].name;
-    }
+      names3 = names3 + "<ul>" + mexican[x].name + "</ul>" + "<li>" + mexican[x].address + "</li>";
   }
   document.getElementById("list").innerHTML=names3;
 }
