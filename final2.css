@@ -10,6 +10,7 @@
   font-weight: normal;
 }
 
+
 h1 {
   font-family: "destain";
   font-size: 65px;
@@ -40,4 +41,10 @@ button {
   border-width: 1.5px;
   font-size: 50px;
   font-family: "zokhan";
+}
+
+#list {
+  text-align: center;
+  font-family: "zokhan";
+  font-size: 60px;
 }
