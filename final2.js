@@ -179,4 +179,5 @@ function initMap() {
     });
     map.fitBounds(bounds);
   });
+
 }
