@@ -47,7 +47,7 @@ function americanFood() {
   var american = [bigEds, carolina, deans, cinema, fork, zinburger];
   var names="";
   for (var x=0; x<american.length;x++){
-      names = names + "<li>" + american[x].name + "</li>" + american[x].address ;
+    names = names + "<li>" + american[x].name + "</li>" + american[x].address ;
   }
   document.getElementById("list").innerHTML=names;
 }
@@ -56,8 +56,8 @@ function italianFood(){
 
   var italian = [caffeLuna, jimmy, mulino, bella, bocci];
   var names1="";
-    for (var x=0; x<italian.length;x++){
-        names1 = names1 + "<li>" + italian[x].name + "</li>" + italian[x].address ;
+  for (var x=0; x<italian.length;x++){
+    names1 = names1 + "<li>" + italian[x].name + "</li>" + italian[x].address ;
   }
   document.getElementById("list").innerHTML=names1;
 }
@@ -67,7 +67,7 @@ function asianFood(){
   var asian = [panda, mura, sake, sono, sushi, buku];
   var names2="";
   for (var x=0; x<asian.length;x++){
-      names2 = names2 + "<li>" + asian[x].name + "</li>" + asian[x].address;
+    names2 = names2 + "<li>" + asian[x].name + "</li>" + asian[x].address;
   }
   document.getElementById("list").innerHTML=names2;
 }
@@ -76,7 +76,7 @@ function mexicanFood(){
   var mexican = [margaritas, cerro, taquitos, centro, armadillo,cafe];
   var names3="";
   for (var x=0; x<mexican.length;x++){
-      names3 = names3 + "<li>" + mexican[x].name + "</li>" + mexican[x].address ;
+    names3 = names3 + "<li>" + mexican[x].name + "</li>" + mexican[x].address ;
   }
   document.getElementById("list").innerHTML=names3;
 }
@@ -86,7 +86,7 @@ function coffeeDrink() {
   var coffee = [crepes, brew, liquid, deja];
   var names4="";
   for (var x=0; x<coffee.length;x++){
-      names4 = names4 + "<li>" + coffee[x].name + "</li>" + coffee[x].address;
+    names4 = names4 + "<li>" + coffee[x].name + "</li>" + coffee[x].address;
   }
   document.getElementById("list").innerHTML=names4;
 }
@@ -96,7 +96,7 @@ function smoothieDrink() {
   var smoothies = [tropical, juice, smoothie];
   var names5="";
   for (var x=0; x<smoothies.length;x++){
-      names5 = names5 + "<li>" + smoothies[x].name + "</li>" + smoothies[x].address;
+    names5 = names5 + "<li>" + smoothies[x].name + "</li>" + smoothies[x].address;
   }
   document.getElementById("list").innerHTML=names5;
 }
@@ -106,19 +106,77 @@ function boozeDrink() {
   var booze = [uncorked, flex, solas, jack, pinhook, ponysaurus, cider];
   var names6="";
   for (var x=0; x<booze.length;x++){
-      names6 = names6 + "<li>" + booze[x].name + "</li>" + booze[x].address;
+    names6 = names6 + "<li>" + booze[x].name + "</li>" + booze[x].address;
   }
   document.getElementById("list").innerHTML=names6;
 }
 
 function initMap() {
-        var raleigh = {lat: 35.787743, lng: -78.644257};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 7,
-          center: raleigh
-        });
-        var marker = new google.maps.Marker({
-          position: raleigh,
-          map: map
-        });
+  var raleigh = {lat: 35.787743, lng: -78.644257};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 7,
+    center: raleigh
+  });
+  var marker = new google.maps.Marker({
+    position: raleigh,
+    map: map
+  });
+  // Create the search box and link it to the UI element.
+  var input = document.getElementById('pac-input');
+  var searchBox = new google.maps.places.SearchBox(input);
+  map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+  // Bias the SearchBox results towards current map's viewport.
+  map.addListener('bounds_changed', function() {
+    searchBox.setBounds(map.getBounds());
+  });
+
+  var markers = [];
+  // Listen for the event fired when the user selects a prediction and retrieve
+  // more details for that place.
+  searchBox.addListener('places_changed', function() {
+    var places = searchBox.getPlaces();
+
+    if (places.length == 0) {
+      return;
+    }
+
+    // Clear out the old markers.
+    markers.forEach(function(marker) {
+      marker.setMap(null);
+    });
+    markers = [];
+
+    // For each place, get the icon, name and location.
+    var bounds = new google.maps.LatLngBounds();
+    places.forEach(function(place) {
+      if (!place.geometry) {
+        console.log("Returned place contains no geometry");
+        return;
       }
+      var icon = {
+        url: place.icon,
+        size: new google.maps.Size(71, 71),
+        origin: new google.maps.Point(0, 0),
+        anchor: new google.maps.Point(17, 34),
+        scaledSize: new google.maps.Size(25, 25)
+      };
+
+      // Create a marker for each place.
+      markers.push(new google.maps.Marker({
+        map: map,
+        icon: icon,
+        title: place.name,
+        position: place.geometry.location
+      }));
+
+      if (place.geometry.viewport) {
+        // Only geocodes have viewport.
+        bounds.union(place.geometry.viewport);
+      } else {
+        bounds.extend(place.geometry.location);
+      }
+    });
+    map.fitBounds(bounds);
+  });
+}
