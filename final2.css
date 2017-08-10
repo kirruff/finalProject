@@ -58,6 +58,9 @@ li {
        width: 500px;
        height: 400px;
        background-color: grey;
+       position: relative;
+       left: 410px;
+       border-radius: 3px;
      }
 
 #pac-input {
