@@ -47,7 +47,7 @@ function americanFood() {
   var american = [bigEds, carolina, deans, cinema, fork, zinburger];
   var names="";
   for (var x=0; x<american.length;x++){
-    names = names + "<li>" + american[x].name + "</li>" + american[x].address ;
+    names = names + "<li>" + "<strong>" + american[x].name + "</strong>" + "</li>" + american[x].address ;
   }
   document.getElementById("list").innerHTML=names;
 }
@@ -57,7 +57,7 @@ function italianFood(){
   var italian = [caffeLuna, jimmy, mulino, bella, bocci];
   var names1="";
   for (var x=0; x<italian.length;x++){
-    names1 = names1 + "<li>" + italian[x].name + "</li>" + italian[x].address ;
+    names1 = names1 + "<li>" + "<strong>" + italian[x].name + "</strong>" + "</li>" + italian[x].address ;
   }
   document.getElementById("list").innerHTML=names1;
 }
@@ -67,7 +67,7 @@ function asianFood(){
   var asian = [panda, mura, sake, sono, sushi, buku];
   var names2="";
   for (var x=0; x<asian.length;x++){
-    names2 = names2 + "<li>" + asian[x].name + "</li>" + asian[x].address;
+    names2 = names2 + "<li>" + "<strong>" + asian[x].name + "</strong>" + "</li>" + asian[x].address;
   }
   document.getElementById("list").innerHTML=names2;
 }
@@ -76,7 +76,7 @@ function mexicanFood(){
   var mexican = [margaritas, cerro, taquitos, centro, armadillo,cafe];
   var names3="";
   for (var x=0; x<mexican.length;x++){
-    names3 = names3 + "<li>" + mexican[x].name + "</li>" + mexican[x].address ;
+    names3 = names3 + "<li>" + "<strong>" + mexican[x].name + "</strong>" + "</li>" + mexican[x].address ;
   }
   document.getElementById("list").innerHTML=names3;
 }
@@ -86,7 +86,7 @@ function coffeeDrink() {
   var coffee = [crepes, brew, liquid, deja];
   var names4="";
   for (var x=0; x<coffee.length;x++){
-    names4 = names4 + "<li>" + coffee[x].name + "</li>" + coffee[x].address;
+    names4 = names4 + "<li>" + "<strong>" + coffee[x].name + "</strong>" + "</li>" + coffee[x].address;
   }
   document.getElementById("list").innerHTML=names4;
 }
@@ -96,7 +96,7 @@ function smoothieDrink() {
   var smoothies = [tropical, juice, smoothie];
   var names5="";
   for (var x=0; x<smoothies.length;x++){
-    names5 = names5 + "<li>" + smoothies[x].name + "</li>" + smoothies[x].address;
+    names5 = names5 + "<li>" + "<strong>" + smoothies[x].name + "</strong>" + "</li>" + smoothies[x].address;
   }
   document.getElementById("list").innerHTML=names5;
 }
@@ -106,7 +106,7 @@ function boozeDrink() {
   var booze = [uncorked, flex, solas, jack, pinhook, ponysaurus, cider];
   var names6="";
   for (var x=0; x<booze.length;x++){
-    names6 = names6 + "<li>" + booze[x].name + "</li>" + booze[x].address;
+    names6 = names6 + "<li>" +"<strong>" + booze[x].name + "</strong>" + "</li>" + booze[x].address;
   }
   document.getElementById("list").innerHTML=names6;
 }

@@ -44,14 +44,16 @@ button {
 }
 
 #list {
-  text-align: center;
   font-family: "zokhan";
-  font-size: 60px;
+  font-size: 45px;
   font-weight: 550;
-}
-
-li {
-  text-align:center;
+float:left;
+margin-left:1cm;
+list-style-type: none;
+margin: 0;
+padding-top: 40px;
+text-align: center;
+margin-left: 4.0cm;
 }
 
 #map {
@@ -59,14 +61,12 @@ li {
        height: 400px;
        background-color: grey;
        position: relative;
-       left: 410px;
        border-radius: 3px;
+       top: 50px;
+       float:right;
+       margin-right:3cm;
      }
 
 #pac-input {
   width: 300px;
-}
-
-#buttonList {
-  display:block;
 }
