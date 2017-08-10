@@ -70,10 +70,43 @@ button:active {
   transform:translateY(4px);
 }
 
-#GWC {
-  text-align:center;
+#imagediv {
+  position:relative;
+  left:75px;
+  width:400px;
 }
 
-img {
+.actualimage {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
   border-radius:5px;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+#imagediv:hover .actualimage {
+  opacity: 0.3;
+}
+
+#imagediv:hover .middle {
+  opacity: 1;
+}
+
+#imagetext {
+  background-color:cadetblue;
+  color:white;
+  font-size:20px;
+  padding:16px 32px;
+  border-radius:5px;
+  border:2px dashed white;
 }
