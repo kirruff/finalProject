@@ -13,8 +13,8 @@
   margin:5px;
   border:4px white;
   border-style:dashed solid;
-  width:500px;
-  height:400px;
+  width:550px;
+  height:560px;
   background-color:#505254;
   display:inline-block;
 }
@@ -61,4 +61,8 @@ button:active {
   background-color:#595959;
   box-shadow:0px 5px #303030;
   transform:translateY(4px);
+}
+
+#GWC {
+  text-align:center;
 }
