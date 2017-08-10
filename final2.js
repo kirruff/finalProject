@@ -110,3 +110,15 @@ function boozeDrink() {
   }
   document.getElementById("list").innerHTML=names6;
 }
+
+function initMap() {
+        var raleigh = {lat: 35.787743, lng: -78.644257};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 7,
+          center: raleigh
+        });
+        var marker = new google.maps.Marker({
+          position: raleigh,
+          map: map
+        });
+      }

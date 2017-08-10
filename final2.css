@@ -53,3 +53,9 @@ button {
 li {
   text-align:center;
 }
+
+#map {
+       width: 500px;
+       height: 400px;
+       background-color: grey;
+     }
