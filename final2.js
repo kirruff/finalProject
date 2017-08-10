@@ -9,7 +9,7 @@ var mura = {name: "Mura at North Hills", type:"asian", address:"4121 Main St #11
 var sake = {name: "Sake House", type:"asian", address:"1141 Falls River Ave # 128, Raleigh, NC 27614"};
 var sono = {name: "Sono Japanese Restaurant", type:"asian", address:"319 Fayetteville St #101, Raleigh, NC 27601"};
 var sushi = {name: "Sushi Thai Restaurant", type:"asian", address:"2434 Wycliff Rd, Raleigh, NC 27613"};
-var buku = {name: "Buku Global Street Food", type:"asian", address:"10 E Davie St, Raleigh, NC 27601"};
+var buku = {name: "Bu∙ku Global Street Food", type:"asian", address:"10 E Davie St, Raleigh, NC 27601"};
 
 var bigEds = {name: "Big Ed's City Market Restaurant", type:"American", address:"220 Wolfe St, Raleigh, NC 27601"};
 var carolina = {name: "Carolina Ale House", type:"American", address:"500 Glenwood Ave, Raleigh, NC 27603"};
